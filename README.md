@@ -1,4 +1,4 @@
-# Payment Processing System (Mid-Level Backend)
+# Payment Processing Microservice
 
 A robust Node.js/PostgreSQL payment processing system designed to handle real-world distributed system challenges including network instability, race conditions, and duplicate requests.
 
