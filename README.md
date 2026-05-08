@@ -11,11 +11,6 @@ A robust Node.js/PostgreSQL payment processing system designed to handle real-wo
 
 ### 2. Resilience & Error Handling
 
-* **Exponential Backoff:** Retries failed payments using the formula:
-
-$$Delay = Base \times 2^{retry\_count}$$
-
-
 * **State Machine:** Strict transitions between `pending`, `processing`, `success`, and `failed`. Final states are protected from being overwritten by delayed webhooks.
 * **Atomic Transactions:** All status changes and event logs are wrapped in ACID-compliant database transactions.
 
